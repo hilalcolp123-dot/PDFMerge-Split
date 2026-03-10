@@ -2,8 +2,14 @@ from flask import Flask, render_template, request, send_file
 from pypdf import PdfReader, PdfWriter
 import zipfile
 import io
+import os
 
-app = Flask(__name__, template_folder='../templates', static_folder='../static')
+base_dir = os.path.dirname(os.path.abspath(__file__))
+app = Flask(
+    __name__,
+    template_folder=os.path.join(base_dir, "../templates"),
+    static_folder=os.path.join(base_dir, "../static"),
+)
 
 # --- ROUTES HALAMAN ---
 
