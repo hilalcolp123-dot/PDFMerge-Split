@@ -1,6 +1,2 @@
 flask
-<<<<<<< HEAD
 pypdf
-=======
-pypdf
->>>>>>> 15ef294bb91a253ae7b8b3882a7b33fca0bfe454
